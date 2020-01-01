@@ -12,8 +12,9 @@ body {
     background-image: url("img/bg.jpg");
 	background-color: #cccccc;
 }
-img{
-border-radius: 50%
+
+img.Round{
+	border-radius: 50%
 }
 div {
     box-sizing: border-box;
@@ -46,6 +47,10 @@ div {
 }
 
 .right{
-	width:48%;
+	padding-top:5%;
+	padding-right:5%;
+	padding-left:5%;
+	padding-bottom:5%;
+	width:40%;
 }
 a{color:white}
