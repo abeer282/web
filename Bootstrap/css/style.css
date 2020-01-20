@@ -1,0 +1,61 @@
+.myName{
+	letter-spacing: -2px;
+	text-align:center;
+	font-size:900%;
+	font-family: "Times New Roman", Times, serif;
+}
+.colorB{
+	color: #000;
+}
+.colorW{
+	color: #fff;
+}
+.bg {
+  /* The image used */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hgoals{
+	color: #000;
+	letter-spacing: -2px;
+	font-size:300%;
+	font-family: "Times New Roman", Times, serif;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0080ff, 0 0 40px #0080ff, 0 0 50px #0080ff, 0 0 60px #0080ff, 0 0 70px #0080ff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #004da6, 0 0 40px #4dfff0, 0 0 50px #4dfff0, 0 0 60px #4dfff0, 0 0 70px #4dfff0, 0 0 80px #4dfff0;
+  }
+}
+
+.solid {
+	color:#ffffff;
+	text-align:center;
+	width: 20%;
+	padding-bottom:5%;
+	padding-top:5%;
+	letter-spacing: 5px;
+	margin-top:50px;
+	text-align:center;
+	font-size:200%;
+	font-family: "Times New Roman", Times, serif;
+	border-style: solid;
+	border-color:#007fff;
+}
