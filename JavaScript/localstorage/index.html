@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #A2B3FF;">
+
+<div style="background-color: #FFD7EF; border-radius: 35px; height:50%; width:60%; position: absolute; padding: 60px; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" >
+	
+	<label>Enter text: </label>
+	<input type="text" id="text1" name="text1"><br><br>
+	<input type="button" value="Move" onclick="move();"> <br><br>
+	<label id="result" ></label>
+</div>
+
+<script>
+function move(){
+	if (typeof(Storage) !== "undefined") {
+	  // Store
+	  localStorage.setItem("text2Bmoved", document.getElementById("text1").value);
+	  window.location.replace("data.html");
+	} else {
+	  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #A2B3FF;" onload="getIt();">
+
+<div style="background-color: #FFD7EF; border-radius: 35px; height:50%; width:60%; position: absolute; padding: 60px; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" >
+	<label id="result" ></label>
+</div>
+
+<script>
+function getIt(){
+	if (typeof(Storage) !== "undefined") {
+	  // Retrieve
+	  document.getElementById("result").innerHTML = localStorage.getItem("text2Bmoved");
+	  localStorage.removeItem("text2Bmoved");
+	} else {
+	  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+}
+</script>
+
+</body>
+</html>
